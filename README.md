@@ -81,7 +81,9 @@ Focus: Applying OOP principles in Java for real-world problem-solving.
 ### Running Python Files (.py)
 1. Open the desired `.py` file in VS Code.
 2. Right-click in the editor and select "Run Python File in Terminal" or use the play button in the top-right corner.
-3. Alternatively, open the integrated terminal (Ctrl+`) and run: `python <filename>.py`
+3. Alternatively, open the integrated terminal in VS Code (`Ctrl + ``) and run:
+   python <filename>.py
+
 
 ### Running Java Files (.java)
 1. Open the desired `.java` file in VS Code.
