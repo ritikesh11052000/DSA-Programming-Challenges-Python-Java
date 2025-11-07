@@ -1,109 +1,107 @@
 # DSA Programming Challenges: Python & Java
 
-This repository contains implementations of 53 common Data Structures and Algorithms (DSA) challenges in both Python and Java. Each challenge is organized in its own folder, providing a structured way to practice and compare implementations across languages.
+A structured learning repository for Data Structures and Algorithms (DSA) challenges in Python and Java, organized into 5 progressive phases to guide learners from basic programming fundamentals to advanced object-oriented concepts.
 
-## Project Structure
+## 5 Phases Roadmap
 
-The repository is organized as follows:
+### 📍 Phase 1 – Core Programming Fundamentals
+Focus: Building foundational programming skills with basic algorithms and logic.
+- Fibonacci series
+- Checking for prime number
+- String palindrome
+- Integer palindrome
+- Armstrong number
+- Factorial
+- Reversing strings
+- Reversing a number
+- Determining leap year
+- Printing patterns
 
-- **53 Challenge Folders**: Each folder corresponds to a specific DSA problem or concept.
-- **Files per Folder**:
-  - `{Challenge_Name}.py` - Python implementation
-  - `{Challenge_Name}.java` - Java implementation
-  - `{Challenge_Name}.ipynb` - Jupyter notebook for interactive exploration and testing
+### 📍 Phase 2 – Intermediate Logic + Arrays & Strings
+Focus: Enhancing problem-solving with arrays, strings, and intermediate algorithms.
+- Removing repeated elements from an arraylist
+- Printing repetitive characters in a string
+- Checking if a string contains a substring
+- Checking for anagrams
+- Reversing an array in place
+- Reversing the order of words in a sentence
+- Removing spaces in a string
+- Finding the first unique character of a string
 
-### Challenge List
+### 📍 Phase 3 – Algorithms & Sorting
+Focus: Mastering search and sorting algorithms, along with mathematical computations.
+- Performing binary search
+- Sorting algorithms → Bubble sort, Insertion sort, Merge sort, Quick sort, Bucket sort, Counting sort
+- Finding the GCD of two numbers
+- Finding the square root of a number
 
-1. Fibonacci series
-2. Checking for prime number
-3. String palindrome
-4. Integer palindrome
-5. Armstrong number
-6. Avoiding deadlocks
-7. Factorial
-8. Reversing strings
-9. Removing repeated elements from an arraylist
-10. Printing patterns
-11. Printing repetitive characters in a string
-12. Finding the greatest common denominator of two numbers
-13. Finding the square root of a number
-14. Reversing an array in place
-15. Reversing the order of words in a sentence
-16. Checking if a string contains a substring
-17. Performing binary search
-18. Checking for anagrams
-19. Designing a vending machine
-20. Reversing a number
-21. Finding the first unique character of a string
-22. Finding the middle element of a linked list
-23. Performing pre-order traversal
-24. Performing pre-order traversal without recursion
-25. Performing in-order traversal
-26. Performing in-order traversal without recursion
-27. Performing post-order traversal
-28. Performing post-order traversal without recursion
-29. Printing all leaves of a binary tree
-30. Sorting an array using quick-sort
-31. Performing insertion sort
-32. Performing bubble sort
-33. Transposing a matrix
-34. Printing all permutations of a string
-35. Reversing a string in place
-36. Adding matrices
-37. Multiplying matrices
-38. Removing spaces in a string
-39. Reversing a linked list
-40. Finding the length of a linked list
-41. Checking for loops in a linked list
-42. Finding the start of looping in a linked list
-43. Finding the middle element of a linked list
-44. Finding the nth element from the tail of a linked list
-45. Converting a linked list to a binary tree
-46. Sorting a linked list
-47. Performing bucket sort
-48. Performing counting sort
-49. Performing merge sort
-50. Checking if two strings are rotations of each other
-51. Changing the Order of the Parameters of Methods
-52. Overriding non-static method
-53. Determining leap year
+### 📍 Phase 4 – Data Structures (Linked List, Trees, Matrix)
+Focus: Implementing and manipulating core data structures.
+- Linked list problems → Reversing a linked list, Finding the length, middle, nth element, Checking loops, Converting to binary tree
+- Tree traversals → Pre-order, In-order, Post-order (with and without recursion), Printing leaves
+- Matrix operations → Transpose, Add, Multiply
 
-## Getting Started
+### 📍 Phase 5 – Object-Oriented Programming (Java Focus)
+Focus: Applying OOP principles in Java for real-world problem-solving.
+- Avoiding deadlocks
+- Designing a vending machine
+- Changing the order of the parameters of methods
+- Overriding non-static method
+
+## Table of Contents
+
+- [Phase 1 – Core Programming Fundamentals](#phase-1--core-programming-fundamentals)
+- [Phase 2 – Intermediate Logic + Arrays & Strings](#phase-2--intermediate-logic--arrays--strings)
+- [Phase 3 – Algorithms & Sorting](#phase-3--algorithms--sorting)
+- [Phase 4 – Data Structures (Linked List, Trees, Matrix)](#phase-4--data-structures-linked-list-trees-matrix)
+- [Phase 5 – Object-Oriented Programming (Java Focus)](#phase-5--object-oriented-programming-java-focus)
+- [Recommended Resources](#recommended-resources)
+- [Instructions for Running Files in VS Code](#instructions-for-running-files-in-vs-code)
+- [Future Updates](#future-updates)
+
+## Recommended Resources
+
+### Python Resources
+- [Official Python Documentation](https://docs.python.org/3/)
+- [GeeksforGeeks Python Tutorials](https://www.geeksforgeeks.org/python-programming-language/)
+- [LeetCode Python Problems](https://leetcode.com/problemset/all/)
+
+### Java Resources
+- [Official Java Documentation](https://docs.oracle.com/en/java/)
+- [GeeksforGeeks Java Tutorials](https://www.geeksforgeeks.org/java/)
+- [LeetCode Java Problems](https://leetcode.com/problemset/all/)
+
+## Instructions for Running Files in VS Code
 
 ### Prerequisites
+- Python 3.x installed
+- Java Development Kit (JDK) 8 or higher installed
+- Jupyter Notebook extension installed in VS Code (search for "Jupyter" in extensions)
 
-- Python 3.x
-- Java Development Kit (JDK) 8 or higher
-- Jupyter Notebook (for .ipynb files)
+### Running Python Files (.py)
+1. Open the desired `.py` file in VS Code.
+2. Right-click in the editor and select "Run Python File in Terminal" or use the play button in the top-right corner.
+3. Alternatively, open the integrated terminal (Ctrl+`) and run: `python <filename>.py`
 
-### Usage
+### Running Java Files (.java)
+1. Open the desired `.java` file in VS Code.
+2. Ensure the Java Extension Pack is installed.
+3. Right-click in the editor and select "Run Java" or use the play button.
+4. Alternatively, in the terminal: `javac <filename>.java` then `java <filename>`
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/DSA-Programming-Challenges-Python-Java.git
-   cd DSA-Programming-Challenges-Python-Java
-   ```
+### Running Jupyter Notebooks (.ipynb)
+1. Open the desired `.ipynb` file in VS Code.
+2. Ensure the Jupyter extension is installed.
+3. Click the "Run All" button or execute cells individually using the play buttons.
 
-2. Navigate to any challenge folder:
-   ```bash
-   cd "Fibonacci series"
-   ```
+## Future Updates
 
-3. Run the Python implementation:
-   ```bash
-   python Fibonacci_series.py
-   ```
-
-4. Compile and run the Java implementation:
-   ```bash
-   javac Fibonacci_series.java
-   java Fibonacci_series
-   ```
-
-5. Open the Jupyter notebook for interactive exploration:
-   ```bash
-   jupyter notebook Fibonacci_series.ipynb
-   ```
+This section outlines planned enhancements to the repository:
+- Adding detailed explanations and time/space complexity analysis for each challenge
+- Implementing optimized solutions and comparing performance
+- Including unit tests for all implementations
+- Adding more challenges to expand each phase
+- Providing video tutorials or walkthroughs for complex problems
 
 ## Contributing
 
