@@ -1,6 +1,51 @@
 # Python implementation placeholder for Checking for prime number
+# to find prime number in python we use the following code
+# we will also explain the logic behind it and the complexity analysis
+# the formula we use for finding prime number is based on trial division method
+# the formula is n % i == 0
+# where n is the number to be checked for primality
+# and i is the divisor ranging from 2 to sqrt(n)
+# if n is divisible by any i in this range, then n is not prime
+# otherwise, n is prime 
+# we will also discuss alternative approaches and their complexities
 # _______________________________________________________________
 # _______________________________________________________________
+# what is a prime number?   
+# prime number is a number greater than 1 that has no positive divisors other than 1 and itself
+# how to calculate prime number?
+# To calculate whether a number is prime or not, we can use the following:
+# to calculate prime numbers, we can use various algorithms and methods
+# some of the common methods to calculate prime numbers are:
+# 1. Trial Division: This is the simplest method where we check if a number n is divisible by any number from 2 to sqrt(n).
+# If it is divisible by any of these numbers, then it is not prime. how we implement this in our code is by using a for loop to iterate through the range and checking for divisibility using the modulus operator (%). and if we find any divisor, we can conclude that the number is not prime.
+# 2. Sieve of Eratosthenes: This is an efficient algorithm to find all prime numbers up to a given limit.
+# It works by iteratively marking the multiples of each prime number starting from 2. how to implement this in our code is by creating a boolean array and marking non-prime numbers. and finally, the remaining unmarked numbers are prime.
+# 3. Miller-Rabin Primality Test: This is a probabilistic algorithm that can quickly determine if a number is composite or probably prime.
+# It is particularly useful for large numbers. how we implement this in our code is by using modular exponentiation and random bases to test the primality of the number.and if the number passes the test for several bases, it is considered probably prime.
+# 4. AKS Primality Test: This is a deterministic algorithm that can determine if a number is prime in polynomial time.
+# However, it is not as efficient as other methods for practical use. how we implement this in our code is by using properties of polynomials and modular arithmetic to test the primality of the number. and if the number satisfies certain conditions, it is considered prime.
+# 5. Wilson's Theorem: This theorem states that a natural number n > 1 is a prime if and only if (n-1)! ≡ -1 (mod n).
+# However, this method is not practical for large numbers due to the factorial calculation. how we implement this in our code is by calculating the factorial of (n-1) and checking the congruence condition. and if the condition holds, then n is prime. what is congruence condition? congruence condition means that when we divide (n-1)! by n, the remainder should be n-1 (which is equivalent to -1 mod n). and hence, we can use this property to check for primality. and if the condition holds, then n is prime.
+# 6. Using Precomputed Lists: For small ranges, we can use precomputed lists of prime numbers to quickly check for primality.
+These methods can be implemented in various programming languages to check for prime numbers efficiently. how we implement these methods in our code is by using appropriate data structures and algorithms to optimize the primality testing process.and we can choose the method based on the size of the number and the required efficiency. and finally, we can combine multiple methods for better performance in certain scenarios. like using trial division for small numbers and switching to probabilistic tests for larger numbers. hence, we can effectively calculate prime numbers using these methods.
+# _______________________________________________________________
+# _______________________________________________________________
+# Key Properties of Prime Numbers:  
+# first we need to understand the basic properties of prime numbers those are:
+# 1. A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
+# 2. The only even prime number is 2, all other even numbers are not prime.
+# 3. A prime number has exactly two distinct positive divisors: 1 and itself.
+# 4. The number 1 is not considered a prime number.
+# 5. The number 2 is the smallest and the only even prime number.
+# 6. All other prime numbers are odd numbers.
+# 7. Prime numbers are infinite, there is no largest prime number.
+# 8. Prime numbers play a crucial role in number theory and have applications in cryptography
+# and computer science.
+# 9. The distribution of prime numbers among natural numbers is a subject of study in mathematics.
+# 10. There are various algorithms to check for primality, such as trial division,
+# the Sieve of Eratosthenes, and probabilistic tests like the Miller-Rabin primality test.
+# _______________________________________________________________
+# _______________________________________________________________   
 # logic explanation
 # to check if a number is prime or not
 # a prime number is a natural number greater than 1
