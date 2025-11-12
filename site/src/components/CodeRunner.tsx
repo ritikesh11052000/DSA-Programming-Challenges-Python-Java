@@ -11,13 +11,13 @@ export default function CodeRunner({ initialCode, language }: { initialCode:stri
     setRunning(true);
     setOutput('Running...');
     try {
-      const res = await axios.post('https://emkc.org/api/v2/piston/execute', {
+      const res = await axios.post('/api/execute', {
         language: language === 'python' ? 'python' : (language === 'java' ? 'java' : language),
         source: code
       }, { headers: { 'Content-Type': 'application/json' }});
-      setOutput(res.data.run.output || JSON.stringify(res.data));
+      setOutput(res.data.output || res.data.stdout || res.data.stderr || 'No output');
     } catch (err: any) {
-      setOutput('Execution error: ' + (err?.response?.data || err.message));
+      setOutput('Execution error: ' + (err?.response?.data?.error || err.message));
     } finally {
       setRunning(false);
     }

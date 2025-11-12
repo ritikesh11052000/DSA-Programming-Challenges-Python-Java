@@ -1,25 +1,43 @@
-import fs from 'fs';
-import path from 'path';
+'use client';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import CodeRunner from '../../../components/CodeRunner';
 const CodeViewer = dynamic(() => import('../../../components/CodeViewer'), { ssr: false });
 
 export default function ChallengePage({ params }: { params: { phaseId: string; challengeId: string } }) {
-  const dataPath = path.join(process.cwd(), 'app', 'data', 'challenges.json');
-  const raw = fs.existsSync(dataPath) ? fs.readFileSync(dataPath, 'utf8') : '{"phases":[] }';
-  const json = JSON.parse(raw);
-  const phase = json.phases.find((p:any) => String(p.id) === params.phaseId);
-  if (!phase) return <p>Phase not found</p>;
-  const challenge = phase.challenges.find((c:any) => c.id === params.challengeId);
-  if (!challenge) return <p>Challenge not found</p>;
+  const [challenge, setChallenge] = useState<any>(null);
+  const [source, setSource] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
-  const codeFilePath = path.resolve(process.cwd(), challenge.path);
-  let source = '';
-  try {
-    source = fs.readFileSync(codeFilePath, 'utf8');
-  } catch (e) {
-    source = `// Unable to load file at ${codeFilePath}\n// Check challenge.path in challenges.json`;
-  }
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const res = await fetch('/data/challenges.json');
+        const json = await res.json();
+        const phase = json.phases.find((p: any) => String(p.id) === params.phaseId);
+        if (!phase) throw new Error('Phase not found');
+        const ch = phase.challenges.find((c: any) => c.id === params.challengeId);
+        if (!ch) throw new Error('Challenge not found');
+        setChallenge(ch);
+
+        // Fetch the code file
+        const codeRes = await fetch(ch.path);
+        if (!codeRes.ok) throw new Error('Failed to load code file');
+        const code = await codeRes.text();
+        setSource(code);
+      } catch (err: any) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
+  }, [params.phaseId, params.challengeId]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!challenge) return <p>Challenge not found</p>;
 
   return (
     <div>
