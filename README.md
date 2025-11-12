@@ -17,6 +17,54 @@ Focus: Building foundational programming skills with basic algorithms and logic.
 - Determining leap year
 - Printing patterns
 
+### Phase - 1 sequence that i had followed to learn each topic in depth :
+1️⃣ Fibonacci Series  
+2️⃣ Prime Number  
+3️⃣ Factorial  
+4️⃣ Sum of Digits  
+5️⃣ String Palindrome  
+6️⃣ Integer Palindrome  
+7️⃣ Armstrong Number  
+8️⃣ Reverse String  
+9️⃣ Reverse Number  
+🔟 Leap Year  
+1️⃣1️⃣ Printing Patterns (all 30 examples)
+
+### ✅ Phase 1 Completion Summary
+
+| 🧩 No. | 💡 Topic | 🧠 Core Concept Learned | 📂 File Name | 📈 Status |
+|:--:|:--|:--|:--|:--:|
+| 1️⃣ | **Fibonacci Series** | Loops, recursion, sequence generation | `Fibonacci_Series.py` | ✅ Completed |
+| 2️⃣ | **Prime Number Check** | Divisibility logic using √n optimization | `Prime_Number_Check.py` | ✅ Completed |
+| 3️⃣ | **Factorial of a Number** | Iterative & recursive computation | `Factorial.py` | ✅ Completed |
+| 4️⃣ | **Sum of Digits** | Modulus and division logic, recursion | `Sum_of_Digits.py` | ✅ Completed |
+| 5️⃣ | **String Palindrome** | Slicing, iteration, and recursion on strings | `String_Palindrome.py` | ✅ Completed |
+| 6️⃣ | **Integer Palindrome** | String conversion and numeric reversal | `Integer_Palindrome.py` | ✅ Completed |
+| 7️⃣ | **Armstrong Number** | Digit powers, recursion, list comprehension | `Armstrong_Number.py` | ✅ Completed |
+| 8️⃣ | **Reversing a String** | Slicing, loops, and recursion methods | `Reverse_String.py` | ✅ Completed |
+| 9️⃣ | **Reversing a Number** | Mathematical digit reversal logic | `Reverse_Number.py` | ✅ Completed |
+| 🔟 | **Leap Year Determination** | Divisibility conditions (4, 100, 400) | `Leap_Year_Check.py` | ✅ Completed |
+| 1️⃣1️⃣ | **Printing Patterns** | Nested loops, Floyd’s Triangle, Pascal’s Triangle, Diamond shapes | `Patterns_All.py` | ✅ Completed |
+
+---
+
+### 🏆 Bonus Patterns Implemented
+| Pattern Name | Concept Highlight |
+|:--|:--|
+| **Pascal’s Triangle** | Binomial coefficient generation |
+| **Hourglass & Diamond Patterns** | Symmetry and nested loops |
+| **Hollow Star & Number Patterns** | Conditional border printing |
+| **Multiplication Table Pattern** | Formatted grid generation |
+| **Checkerboard / Zigzag Pattern** | Alternating index logic |
+
+---
+
+🧭 **Phase 1 Status:** ✅ *All core topics and bonus patterns completed successfully.*
+
+📂 **Next Phase:** [Phase 2 – Intermediate Logic + Arrays & Strings](#phase-2--intermediate-logic--arrays--strings)
+
+
+
 ### 📍 Phase 2 – Intermediate Logic + Arrays & Strings
 Focus: Enhancing problem-solving with arrays, strings, and intermediate algorithms.
 - Removing repeated elements from an arraylist
