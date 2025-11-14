@@ -1,0 +1,89 @@
+/* BASE */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e8e8e8 !important; /* default text */
+  background: #000000 !important;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  text-shadow: none !important;
+}
+
+/* COMMENTS */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955 !important; /* soft muted green-gray (VSCode style) */
+  font-style: italic;
+}
+
+/* STRINGS */
+.token.string {
+  color: #f6c177 !important; /* soft warm orange */
+}
+
+/* NUMBERS */
+.token.number,
+.token.constant {
+  color: #c792ea !important; /* soft purple */
+}
+
+/* KEYWORDS */
+.token.keyword {
+  color: #8ab4f8 !important; /* muted soft steel blue */
+  font-weight: 500;
+}
+
+/* FUNCTIONS */
+.token.function {
+  color: #80cbc4 !important; /* soft teal */
+  font-weight: 500;
+}
+
+/* VARIABLES / PARAMETERS */
+.token.variable,
+.token.symbol,
+.token.attr-name,
+.token.property {
+  color: #e8e8e8 !important; /* clean white-gray */
+}
+
+/* OPERATOR / PUNCTUATION */
+.token.operator,
+.token.punctuation {
+  color: #d0d0d0 !important;
+}
+
+/* CLASS NAME */
+.token.class-name {
+  color: #c5e1ff !important; /* soft light blue */
+  font-weight: 600;
+}
+
+/* BUILT-IN FUNCTIONS */
+.token.builtin {
+  color: #89ddff !important;
+  font-weight: 500;
+}
+
+/* INSERTED / DELETED */
+.token.inserted {
+  color: #b8f4b8 !important;
+}
+.token.deleted {
+  color: #ffb4b4 !important;
+}
+
+/* CODE BLOCK WRAPPER */
+pre {
+  padding: 24px !important;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  overflow-x: auto;
+}
+
+/* SELECTION */
+::selection {
+  background: rgba(255,255,255,0.2) !important;
+}

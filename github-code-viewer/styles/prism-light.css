@@ -1,0 +1,90 @@
+/* PrismJS VS Code Light Theme */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #000000 !important; /* default text */
+  background: #ffffff !important;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  text-shadow: none !important;
+}
+
+/* COMMENTS */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955 !important; /* soft green */
+  font-style: italic;
+}
+
+/* STRINGS */
+.token.string {
+  color: #ce9178 !important; /* brown-orange */
+}
+
+/* NUMBERS */
+.token.number,
+.token.constant {
+  color: #b5cea8 !important; /* light green */
+}
+
+/* KEYWORDS */
+.token.keyword {
+  color: #0000ff !important; /* blue */
+  font-weight: 500;
+}
+
+/* FUNCTIONS */
+.token.function {
+  color: #795e26 !important; /* brown */
+  font-weight: 500;
+}
+
+/* VARIABLES / PARAMETERS */
+.token.variable,
+.token.symbol,
+.token.attr-name,
+.token.property {
+  color: #001080 !important; /* dark blue */
+}
+
+/* OPERATOR / PUNCTUATION */
+.token.operator,
+.token.punctuation {
+  color: #000000 !important;
+}
+
+/* CLASS NAME */
+.token.class-name {
+  color: #267f99 !important; /* teal */
+  font-weight: 600;
+}
+
+/* BUILT-IN FUNCTIONS */
+.token.builtin {
+  color: #795e26 !important;
+  font-weight: 500;
+}
+
+/* INSERTED / DELETED */
+.token.inserted {
+  color: #b8f4b8 !important;
+}
+.token.deleted {
+  color: #ffb4b4 !important;
+}
+
+/* CODE BLOCK WRAPPER */
+pre {
+  padding: 24px !important;
+  border-radius: 14px;
+  border: 1px solid #e1e5e9 !important;
+  overflow-x: auto;
+}
+
+/* SELECTION */
+::selection {
+  background: rgba(0,0,0,0.1) !important;
+}
