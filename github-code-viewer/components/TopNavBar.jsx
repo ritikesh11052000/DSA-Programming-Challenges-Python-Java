@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import SearchBar from './SearchBar'
 
 export default function TopNavBar() {
   const router = useRouter()
@@ -17,6 +18,9 @@ export default function TopNavBar() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
+
+      {/* Center - Search Bar */}
+      <SearchBar />
 
       {/* Right side - Home button */}
       <button
