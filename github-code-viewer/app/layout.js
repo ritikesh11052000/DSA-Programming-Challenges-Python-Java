@@ -3,7 +3,7 @@ import { ThemeProvider } from 'next-themes'
 import ThemeToggle from '../components/ThemeToggle'
 import TopNavBar from '../components/TopNavBar'
 import BottomNavBar from '../components/BottomNavBar'
-import { Analytics } from '@vercel/analytics/react'
+
 
 // =========================
 //   SEO METADATA
@@ -59,7 +59,6 @@ export default function RootLayout({ children }) {
           <BottomNavBar />
 
           {/* Vercel Analytics */}
-          <Analytics />
         </ThemeProvider>
       </body>
     </html>
