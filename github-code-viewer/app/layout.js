@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           {children}
           <BottomNavBar />
 
-          {/* Vercel Analytics */}
+          {/* Vercel Analytics.*/}
         </ThemeProvider>
       </body>
     </html>
